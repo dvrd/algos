@@ -1,17 +1,7 @@
 package algos
 
 import "base:intrinsics"
-import "core:fmt"
 import "core:slice"
-import "core:testing"
-
-main :: proc() {
-	result := merge_sort([]int{2, 5, 4, 1, 3})
-
-	fmt.print("Result:")
-	for n in result do fmt.print(" ", n)
-	fmt.print("\n")
-}
 
 insertion_sort :: proc(arr: []$T) -> []T where intrinsics.type_is_numeric(T) {
 	j: T
